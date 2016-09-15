@@ -1,5 +1,5 @@
 
-//Problem Specification.
+//Problem Specification of Assignment 3.
 
 Create a function called pow that accepts two integers that represent the base and the exponent. The exponent should not permit negative values.
 Use the code you created in the previous module for some of this functionality but add additional code
