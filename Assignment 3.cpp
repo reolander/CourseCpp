@@ -1,7 +1,7 @@
 
 #include <iostream>
 
-int function pow (int base, unsigned int exponent);
+int pow (int base, unsigned int exponent);
 double sine(double opposite, double hypotenuse);
 
 using namespace std;
@@ -16,7 +16,7 @@ int main() {
 }
 
 //Pow Function.
-int function pow (int base, unsigned int exponent) {
+int pow (int base, unsigned int exponent) {
 	
 	int total = 1;
 	if (exponent == 0)
