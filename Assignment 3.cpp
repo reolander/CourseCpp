@@ -32,7 +32,7 @@ int pow (int base, unsigned int exponent) {
 //Computing sine of an angle using a funciton.
 double sine(double opposite, double hypotenuse) {
 	
-	return opposite/hypotenuse.
+	return opposite/hypotenuse;
 }
 
 
