@@ -1,4 +1,26 @@
+/* PROBLEM STATEMENT.
+ *
+ * In the previous module, you created a for loop to calculate a base raised to an exponent. 
+ * In this peer review, you are going to put that code into a function and create two more functions.
+ * Paste your code in the response section below that satisfies these requirements:
+ * 	
+ * Create a function called pow that accepts two integers that represent the base and the exponent. 
+ * The exponent should not permit negative values. 
+ * Use the code you created in the previous module for some of this functionality but add additional code
+ * The additional code should make use of an if statement to check the exponent value. 
+ * If it is 0, then immediately return 1 otherwise calculate the power and return the result.
+ * Show sample code that will call the function and get the result.
+ *	
+ * For the second function you will compute the sine of an angle. 
+ * Your function should accept the opposite and hypotenuse lengths and return the sine value. The formula for sine is:
+ * sin = opposite / hypotenuse where / is used to denote division
+ * Ensure that you paste the code for the function as well as the code that calls the function and assigns the value to a variable.
+ */
 
+/** Problem 1 of 2
+ * 
+ */
+ 
 #include <iostream>
 
 int pow (int base, unsigned int exponent);
@@ -35,34 +57,31 @@ double sine(double opposite, double hypotenuse) {
 	return opposite/hypotenuse;
 }
 
-
+/** Problem 2 of 2
+ * 
+ */
 #include <iostream>
+
+double avg(int array[]);
+
 using namespace std;
 
 int main() {
 
-
-	int intArray[5] = {1, 2, 3, 4, 5};
-
-	double avgOfArray = avg(intArray[5]);
-
-	//Compute average of integer array values using function avg.
-    double avg(int array[]) {
-
-       double total = 0; 
-       double average = 0;
-
-       for(int i = 0; i < array.length; i++)
-       {
-          total += array[i];
-       }
-
-       average = total / array.length;
-
-       return average;
-    }
-
-
+	int integerArray[5] = {1, 2, 3, 4, 5};
+	double avgOfArray = avg(integerArray);
+	
+	cout << avgOfArray << endl;
 }
+//Compute average of integer array values using function avg. (FUNCTION)
+double avg(int array[]) {
 
-
+	double total = 0; 
+	double average = 0;
+	
+	for(int i = 0, n = sizeof(array)/ sizeof(*array); i < n; i++)
+	  total += array[i];
+	
+	average = total / (sizeof(array)/ sizeof(*array));	
+	return average;
+}
