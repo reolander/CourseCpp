@@ -1,5 +1,5 @@
-/* PROBLEM STATEMENT.
- *
+/**
+ * PROBLEM STATEMENT.
  * In the previous module, you created a for loop to calculate a base raised to an exponent. 
  * In this peer review, you are going to put that code into a function and create two more functions.
  * Paste your code in the response section below that satisfies these requirements:
@@ -35,6 +35,8 @@ int main() {
 	
 	cout << twocube << endl;
 	cout << sin << endl;
+	
+	return 0;
 }
 
 //Pow Function.
@@ -72,15 +74,18 @@ int main() {
 	double avgOfArray = avg(integerArray, 5);
 	
 	cout << avgOfArray << endl;
+	
+	return 0;
 }
 //Compute average of integer array values using function avg. (FUNCTION)
 double avg(int array[], int n) {
 	
 	double average = 0;
+	double total = 0;
 
 	for(int i = 0; i < n; i++)
-	  average += array[i];
+	  total += array[i];
 	
-	average = average/n;	
+	average = total / n;	
 	return average;
 }
