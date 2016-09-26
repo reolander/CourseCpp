@@ -62,26 +62,25 @@ double sine(double opposite, double hypotenuse) {
  */
 #include <iostream>
 
-double avg(int array[]);
+double avg(int array[], int n);
 
 using namespace std;
 
 int main() {
 
-	int integerArray[5] = {1, 2, 3, 4, 5};
-	double avgOfArray = avg(integerArray);
+	int integerArray[5] = {1, 1, 1, 1, 4};
+	double avgOfArray = avg(integerArray, 5);
 	
 	cout << avgOfArray << endl;
 }
 //Compute average of integer array values using function avg. (FUNCTION)
-double avg(int array[]) {
-
-	double total = 0; 
+double avg(int array[], int n) {
+	
 	double average = 0;
+
+	for(int i = 0; i < n; i++)
+	  average += array[i];
 	
-	for(int i = 0, n = sizeof(array)/ sizeof(*array); i < n; i++)
-	  total += array[i];
-	
-	average = total / (sizeof(array)/ sizeof(*array));	
+	average = average/n;	
 	return average;
 }
