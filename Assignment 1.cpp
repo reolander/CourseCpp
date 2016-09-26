@@ -1,7 +1,7 @@
-/*	In this first response, please paste your code that implements an array. Your array should follow these guidelines:
- *
- *  Store int data types
- *	Store 10 values
+/**	
+ * In this first response, please paste your code that implements an array. Your array should follow these guidelines:
+ * 	Store int data types
+ * 	Store 10 values
  *	Have an appropriate name
  * 	Be initialized in the declaration statement
  */
@@ -16,8 +16,8 @@
 	 //Tells the OS that program has been executed and that it is time to de-allocate certain resources.
  }
  
- /* In this second response, please paste your code that implements an enumeration. Your enumeration should follow these guidelines:
-  *
+ /**
+  *  In this second response, please paste your code that implements an enumeration. Your enumeration should follow these guidelines:
   *	Store the months of the year
   *	Start the first element as 1 rather than 0
   *	Use an appropriate name
