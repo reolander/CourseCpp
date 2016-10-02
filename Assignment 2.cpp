@@ -17,7 +17,7 @@
  */
 
 /**
- * Problem 1 pf 2.
+ * Problem 1 of 2.
  */
  
   #include <iostream>
@@ -33,5 +33,43 @@
     cout << total << endl;
     return 0;
   }
- 
- 
+
+/**
+ * Problem 2 of 2.
+ *
+ * For this second response, you will create a switch statement. The switch statement should include the following:
+ * A variable of type char for the comparison
+ * The switch statement should check for the value of 'y' (lowercase) or 'Y' (uppercase) and output the response "You chose y or Y" to the console window
+ * The switch statement should check for the value 'n' or 'N' and output the response, "You chose n or N" to the console window
+ * The switch statement should include the correct component that will output "You didn't choose a valid option" if neither of these two previous conditions are true
+ */
+
+  #include <iostream>
+  using namespace std;
+
+  int main() {
+
+   char response = 'y';
+
+   switch (response)
+   {
+   case 'y':
+   case 'Y':
+   cout << "You chose y or Y" << endl;
+   break;
+     
+   case 'n':
+   case 'N':
+   cout << "You chose n or N" << endl;
+   break;
+     
+   default:
+   cout << "You didn't choose a valid option";
+   break;
+   }
+   
+   return 0;
+   
+  }
+
+
